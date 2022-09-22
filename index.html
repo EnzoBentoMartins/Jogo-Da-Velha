@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="title">Jogo da Velha</h1>
+
+    <div id="players">
+        <div id="player1">
+            <h3 id="nomeP1">Player 1</h3>
+            <br>
+            <input type="text" name="p1" id="p1" value="Player 1" oninput="nomear()">
+            <br>
+            <h3 class="playSymbol1"></h3>
+        </div>
+
+        <div id="player2">
+            <h3 id="nomeP2">Player 2</h3>
+            <br>
+            <input type="text" name="p2" id="p2" value="Player 2" oninput="nomear()">
+            <h3 class="playSymbol2"></h3>
+        </div>
+    </div>
+
+    <div id="stage">
+        <div>
+            <div id="0" class="square"></div>
+            <div id="1" class="square"></div>
+            <div id="2" class="square"></div>
+        </div>
+
+        <div>
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+        </div>
+
+        <div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+        </div>
+    </div>
+
+    <div id="recDiv">
+        <button id="recBtn" onclick="recomecar()">RECOMEÇAR</button>
+    </div>
+
+    <div id="modal">
+        <div id="aviso">
+            <h2 id="modalTitle">O Jogo Acabou</h2>
+            <button id="btn" onclick="recomecar()">JOGAR NOVAMENTE</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
